@@ -1,0 +1,15 @@
+/*
+  Los selectores css:
+  Por tipo. Ejem: input, h1, p...
+  Por clase. Ejem: .class
+  Por ID. Ejem: #id
+  Universal. Se usa *
+*/
+
+
+h2 {
+  font-family: Verdana;
+  /*
+  si la fuente tiene mas de una palabra, lo pones entre comillas EXCEPTO fuentes genéricas
+  */
+}

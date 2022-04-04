@@ -1,0 +1,105 @@
+<!DOCTYPE html> <!--Declaración de la versión de html  -->
+<!--Los elementos son los componentes básicos de la estructura web-->
+<!-- Las etiquetas ayudan a escribir los elementos -->
+
+<html lang="es">
+  <head>
+  <!-- Actuan detras de la pagina, no es lo principal -->
+  <!-- tiene los metadata (metadatos) -->
+  <!-- la etiqueta style sirve para describir el estilo, pero vamos a hacerlo en un archivo CSS a parte -->
+
+    <!-- la etiqueta title selecciona el titulo de la pagina visto en la pestaña -->
+    <!-- la etiqueta link sirve para acceder a otros archivos por ejemplo -->
+    <!-- rel es relationship. Denomina una relacion entre el archivo css y el html -->
+    <link href="main.css" rel="stylesheet">
+    <title>App De Gatitos</title>
+  </head>
+
+  <body>
+  <!-- Definimos la estructura de la página-->
+    <!--encabezado-->
+    <h2>¡App de gatos!</h2>
+    <main>
+      <!-- contenido principal de la página. SOLO PARA EL BODY -->
+      <h3>Imágenes de gatos:</h3>
+
+      <!--parrafo-->
+      <!-- la etiqueta (a) es anchor, se usa para enlaces -->
+      <!-- href es el destino del enlace -->
+      <!-- _blank es para abrir el enlace en una nueva pestaña -->
+      <!-- rel (con esos valores) sirve para prevenir tabnabbing, un ataque. La ventana de origen se reemplaza y el usuario da sus datos. úsalo con webs externas -->
+      <p>Haz click aquí para ver más <a href="https://discord.gg/ABqkcBz3Hh" target="_blank" rel="noopener noreferrer">imágenes de gatos</a></p>
+
+      <!-- el atributo alt se usa si una img no carga bien -->
+      <a href="images/relaxing-cat.jpg" target="_blank">
+      <img src="images/relaxing-cat.jpg" alt="Un gato naranjita" id="miau">
+      </a>
+
+      <!-- linea horizontal con hr (horizontal rule). Es un separador -->
+      <hr>
+
+      <h3>Listas de gatos</h3>
+
+      <!-- los divs son contenedores, sirven para actuar como contenedores personalizables y son buenos para usar sobre css -->
+      <div>
+        <p>Cosas que los gatos <strong>aman</strong>:</p>
+        <ul class="list">
+          <!-- unordered list (lista no ordenada) -->
+          <!-- list item (elemento de la lista) -->
+          <li><em>Menta gatuna</em></li>
+          <li><em>Apuntadores laser</em></li>
+          <li><em><s>Lasaña</s></em></li>
+        </ul>
+
+        <img src="images/lasagna.jpg" alt="Una rica lasaña">
+
+        <!-- la etiqueta strong le da importancia a una parte del texto poniendolo en negrita -->
+        <!-- la etiqueta em es para poner texto en cursiva. Sirve para enfatizar -->
+        <!-- para tachar texto, usamos la etiqueta s (strikethrough, tachar) -->
+        <p>Cosas que los gatos <strong>odian</strong>:</p>
+        <ol class="list">
+          <!-- ordered list (lista ordenada). -->
+          <li><em>Tratamientos antipulgas</em></li>
+          <li><em>Truenos</em></li>
+          <li><em>Otros gatos</em></li>
+        </ol>
+      </div>
+
+      <img src="images/gatitos.png" alt="Otros gatitos">
+
+      <!-- vamos a crear un formulario con la etiqueta form -->
+      <!-- action representa el archivo en el servidor. Es la direccion del programa que maneja estos datos enviados -->
+      <form action="/enviar">
+        <!-- input es para obtener una respuesta o valor -->
+        <!-- placeholder es lo que se muestra en la barra del input text -->
+        <!-- con required podemos hacer que un campo sea obligatorio -->
+        <input type="text" placeholder="URL de la foto de tu gato :D" required>
+
+        <!-- ahora un boton para enviar con button -->
+        <button type="submit">Enviar!</button>
+
+        <!-- saltos de linea (break, romper) -->
+        <br>
+
+        <!-- tipo radio es para un boton de opcion -->
+        <!-- label != tag. Aquí nos sirve para darle al texto y así poder marcar la opción -->
+        <!-- name sirve para conectar grupos y solo poder marcar uno a la vez -->
+        <!-- el atributo checked permite tener marcado un input por defecto como radio o checkbox -->
+        <!-- el atributo value sirve para poder mandar un valor al servidor por defecto en caso de que se escoja algo -->
+        <label><input type="radio" name="form" value="interior" checked>¿De interior?</label>
+        <label><input type="radio" name="form" value="exterior">¿De exterior?</label><br><br>
+
+        <!-- cajas de verificación. Tipo checkbox -->
+        <label><input type="checkbox" name="personalidad" value="cariñoso">Cariñoso</label><br>
+        <label><input type="checkbox" name="personalidad" value="perezoso" checked>Perezoso</label><br>
+        <label><input type="checkbox" name="personalidad" value="energico">Enérgico</label>
+      </form>
+    </main>
+
+    <!-- el elemento footer es el pie de página y va fuera de nuestro main -->
+    <footer>
+      <!-- para hacer el texto más pequeño usamos la etiqueta small -->
+      <p><small><em>Sin derechos de autor - <a href="https://github.com/167BOT">167BOT en Github</a></em></small></p>
+    </footer>
+  </body>
+</html>
