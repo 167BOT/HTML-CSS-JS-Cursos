@@ -1,0 +1,16 @@
+/*
+  el margin es la distacia entre el borde de un elemento y el borde de otros elementos
+
+*/
+
+div {
+  background-color: red;
+}
+
+img {
+  margin: 20px 15px 10px 5px;
+  background-color: yellow;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+}

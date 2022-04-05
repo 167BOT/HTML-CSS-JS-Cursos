@@ -3,13 +3,80 @@
   Por tipo. Ejem: input, h1, p...
   Por clase. Ejem: .class
   Por ID. Ejem: #id
+  Por selector de atributo. Ejem: a[title]
   Universal. Se usa *
 */
 
+/*
+  VALORES ABSOLUTOS:
+  px
+  vw (viewport)
+  em
+*/
+
+/*
+  podemos cambiar el comportamiento de los estilos con !important
+   PRIORIDADES:
+
+   !important
+   Style dentro del elemento
+   IDs
+   Clases
+   Elementos
+*/
+
+a[href="https://discord.gg/ABqkcBz3Hh"] {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  /* font-weight (peso de la fuente) para ponerle estilos */
+  /* text-decoration sirve para los formatos de los enlaces */
+}
 
 h2 {
   font-family: Verdana;
   /*
   si la fuente tiene mas de una palabra, lo pones entre comillas EXCEPTO fuentes genéricas
   */
+}
+
+.gato {
+  width: 200px;
+  border-width: 5px;
+  border-color: blue red;
+  border-style: solid dotted dashed;
+
+  /*
+  STYLES DE BORDER: se asignan en orden de las agujas del reloj
+
+  solid es una línea continua al rededor del elemento
+  none es para eliminar el borde
+  dotted es para poner bordes con puntos
+  dashed es para poner bordes en forma de cuadrados con separaciones
+  double es para un borde doble
+  groove es para poner un surco
+  ridge es para una cresta
+  inset/outset
+   */
+}
+
+.bordes-redondos {
+  border-radius: 20px;
+}
+
+.contenedor-listas {
+  background-color: silver;
+}
+
+#title {
+  font-size: 30px;
+  color: green;
+  font-family: monospace;S
+}
+
+#miau {
+  border-radius: 150px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: brown;
 }

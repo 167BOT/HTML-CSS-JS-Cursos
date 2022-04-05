@@ -18,7 +18,7 @@
   <body>
   <!-- Definimos la estructura de la página-->
     <!--encabezado-->
-    <h2>¡App de gatos!</h2>
+    <h2 id="title">¡App de gatos!</h2>
     <main>
       <!-- contenido principal de la página. SOLO PARA EL BODY -->
       <h3>Imágenes de gatos:</h3>
@@ -32,7 +32,7 @@
 
       <!-- el atributo alt se usa si una img no carga bien -->
       <a href="images/relaxing-cat.jpg" target="_blank">
-      <img src="images/relaxing-cat.jpg" alt="Un gato naranjita" id="miau">
+      <img src="images/relaxing-cat.jpg" alt="Un gato naranjita" class="gato bordes-redondos" id="miau">
       </a>
 
       <!-- linea horizontal con hr (horizontal rule). Es un separador -->
@@ -41,7 +41,7 @@
       <h3>Listas de gatos</h3>
 
       <!-- los divs son contenedores, sirven para actuar como contenedores personalizables y son buenos para usar sobre css -->
-      <div>
+      <div class="contenedor-listas">
         <p>Cosas que los gatos <strong>aman</strong>:</p>
         <ul class="list">
           <!-- unordered list (lista no ordenada) -->
@@ -65,7 +65,7 @@
         </ol>
       </div>
 
-      <img src="images/gatitos.png" alt="Otros gatitos">
+      <img src="images/gatitos.png" alt="Otros gatitos" class="gato">
 
       <!-- vamos a crear un formulario con la etiqueta form -->
       <!-- action representa el archivo en el servidor. Es la direccion del programa que maneja estos datos enviados -->

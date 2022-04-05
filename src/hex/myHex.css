@@ -1,0 +1,41 @@
+/* Hexadecimales */
+
+/*
+ Son en base 16
+ Del 0 al 9 y de la A a la F (0-9 & A-F)
+
+ #000000 ---> Negro
+ #   00    00   00
+    Rojo Verde Azul
+
+  Podemos abreviar los Hexadecimales de esta manera:
+  #000000 ---> #000
+  #ffffff ---> #fff
+
+  Lo que se hace es quitar digitos repetidos en los pares SOLO CUANDO EN CADA PAR ESTÁN REPETIDOS
+*/
+
+/*
+  RGB
+*/
+
+/*
+   R    G    B      A
+  Red Green Blue  Alpha
+  255  255   255    1
+*/
+
+div {
+  background-color: #000000;
+}
+
+h2 {
+  color: rgba(255, 5, 80, 1);
+}
+
+img {
+  border-radius: 150px;
+  border-color: #eb4034;
+  border-width: 10px;
+  border-style: solid;
+}

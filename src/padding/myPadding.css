@@ -1,0 +1,16 @@
+/*
+  el padding es la distancia entre el borde de un elemento y su contenido
+  va como las agujas del reloj
+*/
+
+div {
+  background-color: red;
+}
+
+img {
+  padding: 20px 15px 10px 5px;
+  background-color: yellow;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+}
